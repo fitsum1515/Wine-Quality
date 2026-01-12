@@ -69,7 +69,7 @@ The dataset is highly imbalanced.
 To avoid misleading accuracy, SMOTE (Synthetic Minority Oversampling Technique) is applied:
 | Before SMOTE        | After SMOTE          |
 | ------------------- | -------------------- |
-| 1382 bad / 217 good | 1382 bad / 1382 good |
+| 1382 bad / 217 good | 1105 bad / 1105 good |
 
   ✔ This significantly improves precision, recall, and F1 score reliability.
 
