@@ -55,21 +55,35 @@ Best Model Selection (Random Forest)
 Model Saving & New Data Prediction
 ```
 # 📈 Models Implemented
-| Model                  | Accuracy  | F1 Score |
-| ---------------------- | --------- | -------- |
-| Logistic Regression    | 82%       | 0.82     |
-| Support Vector Machine | 88%       | 0.88     |
-| K-Nearest Neighbors    | 88%       | 0.89     |
-| **Random Forest**      | **91.7%** | **0.91** |
+| Model               | Accuracy | Precision | Recall | F1-Score |
+|--------------------|----------|-----------|--------|----------|
+| Logistic Regression| 0.74     | 0.71      | 0.69   | 0.70     |
+| K-Nearest Neighbors| 0.81     | 0.79      | 0.77   | 0.78     |
+| Support Vector Mach| 0.84     | 0.83      | 0.81   | 0.82     |
+| Random Forest      | 0.89     | 0.88      | 0.86   | 0.87     |
+
                   
    ✔ Random Forest was selected as the final deployed model
+# - Wine quality is not linear, and its variables are chemically dependent. PCA collapses these nonlinear relations into linear eigenvectors, The pipeline over-compresed because we are working on three distructive operations :
+- SMOTE
+- StandardScaler
+- PCA (0.90)
+  but when we remove the PCA from the Pipeline we got the following :
+  | Model               | Accuracy | Precision | Recall | F1-Score |
+|--------------------|----------|-----------|--------|----------|
+| Logistic Regression| 0.83     | 0.42      | 0.79   | 0.55     |
+| K-Nearest Neighbors| 0.82     | 0.41      | 0.81   | 0.54     |
+| Support Vector Mach| 0.87     | 0.50      | 0.74   | 0.60     |
+| Random Forest      | 0.92     | 0.70      | 0.72   | 0.71     |
+
+  
 
 # ⚖ Handling Imbalanced Data 
 The dataset is highly imbalanced.
 To avoid misleading accuracy, SMOTE (Synthetic Minority Oversampling Technique) is applied:
 | Before SMOTE        | After SMOTE          |
 | ------------------- | -------------------- |
-| 1382 bad / 217 good | 1382 bad / 1382 good |
+| 1382 bad / 217 good | 1105 bad / 1105 good |
 
   ✔ This significantly improves precision, recall, and F1 score reliability.
 
