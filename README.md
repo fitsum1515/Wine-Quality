@@ -69,7 +69,7 @@ Model Saving & New Data Prediction
 - SMOTE
 - StandardScaler
 - PCA (0.90)
-  but when we remove the PCA from the Pipeline we got the following : around 91% accuracy on Random Forest 
+  but when we remove the PCA from the Pipeline we got around 91.5 % accuracy on Random Forest 
 
 
   
