@@ -63,7 +63,8 @@ Model Saving & New Data Prediction
 | Random Forest      | 0.89     | 0.88      | 0.86   | 0.87     |
 
                   
-   ✔ Random Forest was selected as the final deployed model
+   ✔ Random Forest was selected as the final deployed model.
+   
  **Wine quality is not linear, and its variables are chemically dependent. PCA collapses these nonlinear relations into linear eigenvectors, The pipeline over-compresed because we are working on three distructive operations:**
 - SMOTE
 - StandardScaler
@@ -75,6 +76,8 @@ Model Saving & New Data Prediction
 
 # ⚖ Handling Imbalanced Data 
 The dataset is highly imbalanced.
+![inbalanced](https://github.com/user-attachments/assets/93d88175-79a2-4c82-aa11-bb336162e34e)
+
 To avoid misleading accuracy, SMOTE (Synthetic Minority Oversampling Technique) is applied:
 | Before SMOTE        | After SMOTE          |
 | ------------------- | -------------------- |
