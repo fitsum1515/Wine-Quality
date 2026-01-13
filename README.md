@@ -68,13 +68,8 @@ Model Saving & New Data Prediction
 - SMOTE
 - StandardScaler
 - PCA (0.90)
-  but when we remove the PCA from the Pipeline we got the following :
-| Model              | Accuracy | Precision | Recall | F1-Score |
-|--------------------|----------|-----------|--------|----------|
-| Logistic Regression| 0.83     | 0.42      | 0.79   | 0.55     |
-| K-Nearest Neighbors| 0.82     | 0.41      | 0.81   | 0.54     |
-| Support Vector Mach| 0.87     | 0.50      | 0.74   | 0.60     |
-| Random Forest      | 0.92     | 0.70      | 0.72   | 0.71     |
+  but when we remove the PCA from the Pipeline we got the following : around 91% accuracy on Random Forest 
+
 
   
 
