@@ -64,7 +64,7 @@ Model Saving & New Data Prediction
 
                   
    ✔ Random Forest was selected as the final deployed model
- -** Wine quality is not linear, and its variables are chemically dependent. PCA collapses these nonlinear relations into linear eigenvectors, The pipeline over-compresed because we are working on three distructive operations :**
+ **Wine quality is not linear, and its variables are chemically dependent. PCA collapses these nonlinear relations into linear eigenvectors, The pipeline over-compresed because we are working on three distructive operations:**
 - SMOTE
 - StandardScaler
 - PCA (0.90)
