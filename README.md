@@ -113,7 +113,7 @@ PCA retains 90% o the original variance using 7 principal components, improving
 ```
 # Output:
 ``` text
-  Bad Quality Wine
+  Bad Wine
 ```
 
 # 🎯 Learning Outcomes
