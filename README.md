@@ -15,7 +15,7 @@ THis project presents a full data science worklow that performs:
 - Features: 11 physicochemical attributes
 - Target: Quality - converted to binary classification (Good or Bad)
 
- | Class | Meaning              |
+| Class | Meaning              |
 | ----- | -------------------- |
 | 0     | Bad / Medium quality |
 | 1     | Good quality (≥ 7)   |
@@ -69,7 +69,7 @@ Model Saving & New Data Prediction
 - StandardScaler
 - PCA (0.90)
   but when we remove the PCA from the Pipeline we got the following :
-  | Model               | Accuracy | Precision | Recall | F1-Score |
+| Model              | Accuracy | Precision | Recall | F1-Score |
 |--------------------|----------|-----------|--------|----------|
 | Logistic Regression| 0.83     | 0.42      | 0.79   | 0.55     |
 | K-Nearest Neighbors| 0.82     | 0.41      | 0.81   | 0.54     |
