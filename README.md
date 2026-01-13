@@ -78,10 +78,7 @@ Model Saving & New Data Prediction
 The dataset is highly imbalanced.
 ![inbalanced](https://github.com/user-attachments/assets/93d88175-79a2-4c82-aa11-bb336162e34e)
 
-To avoid misleading accuracy, SMOTE (Synthetic Minority Oversampling Technique) is applied:
-| Before SMOTE        | After SMOTE          |
-| ------------------- | -------------------- |
-| 1382 bad / 217 good | 1105 bad / 1105 good |
+To avoid misleading accuracy, SMOTE (Synthetic Minority Oversampling Technique) is applied only to the training set to avoid data leakage:
 
 | Dataset                 | Bad Wine | Good Wine |
 | ----------------------- | -------- | --------- |
