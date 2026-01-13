@@ -83,6 +83,13 @@ To avoid misleading accuracy, SMOTE (Synthetic Minority Oversampling Technique) 
 | ------------------- | -------------------- |
 | 1382 bad / 217 good | 1105 bad / 1105 good |
 
+| Dataset                 | Bad Wine | Good Wine |
+| ----------------------- | -------- | --------- |
+| Training (Before SMOTE) | 1105     | 193       |
+| Training (After SMOTE)  | 1105     | 1105      |
+| Test Set                | 253      | 48        |
+
+
   ✔ This significantly improves precision, recall, and F1 score reliability.
 
 # 🧮 Dimensionality Reduction
